@@ -43,6 +43,6 @@ async function fetchRankings() {
   return await db.collection(databaseName)
     .where('point', '>=', 1)
     .orderBy('point', 'desc')
-    .limit(1000)
+    .limit(300)
     .get();
 }
