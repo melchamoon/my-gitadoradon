@@ -23,6 +23,8 @@ function start() {
 
 function nextQuestion() {
   setRandomMusic();
+  document.getElementById('filterInput').value = "";
+  refreshFilterInput("");
   document.getElementById('start-button').disabled = true;
   document.getElementById('result-component').style.display = 'none';
   for (let i = 0; i < waitingTime - 1; i++) {
@@ -199,25 +201,29 @@ function setRandomMusic() {
 
 function hookFilterInput() {
   document.getElementById('filterInput').addEventListener('input', function () {
-    var inputText = this.value.toLowerCase();
-    var select = document.getElementById('itemSelect');
-    var options = select.options;
-    var isFirst = false;
-
-    for (var i = 0; i < options.length; i++) {
-      var optionText = options[i].text.toLowerCase();
-      if (optionText.startsWith(inputText)) {
-        options[i].style.display = '';
-        if (!isFirst) {
-          select.selectedIndex = i;
-          isFirst = true;
-        }
-      } else {
-        options[i].style.display = 'none';
-      }
-    }
+    refreshFilterInput(this.value);
   });
 };
+
+function refreshFilterInput(value) {
+  var inputText = value.toLowerCase();
+  var select = document.getElementById('itemSelect');
+  var options = select.options;
+  var isFirst = false;
+
+  for (var i = 0; i < options.length; i++) {
+    var optionText = options[i].text.toLowerCase();
+    if (optionText.startsWith(inputText)) {
+      options[i].style.display = '';
+      if (!isFirst) {
+        select.selectedIndex = i;
+        isFirst = true;
+      }
+    } else {
+      options[i].style.display = 'none';
+    }
+  }
+}
 
 function submitName() {
   let name = document.getElementById('input-name').value;
