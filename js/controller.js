@@ -9,6 +9,7 @@ const totalStage = 5;
 const questionInterval = 5;
 
 let stage = 1;
+let titles = [];
 let points = [];
 let timeoutIDs = [];
 let correctTitle = "";
@@ -72,8 +73,10 @@ function answer(retire = false) {
     document.getElementById('result-success').style.display = 'none';
     document.getElementById('result-fail').style.display = 'block';
   }
+  titles.push(correctTitle);
   points.push(point);
   document.getElementById(`point-stage${stage}`).textContent = `${point}点`;
+  document.getElementById(`title-stage${stage}`).textContent = correctTitle;
   document.getElementById('yourAnswer').textContent = selectedText;
   document.getElementById('correctAnswer').textContent = correctTitle;
   document.getElementById('answer-component').style.display = 'none';
