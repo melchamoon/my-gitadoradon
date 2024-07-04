@@ -225,8 +225,14 @@ function submitName() {
     alert("名前は20文字以内にしてくれなのだ！");
     return false;
   }
+  document.getElementById('submit-name-button').disabled = true;
   changeName(name);
-  window.location.href = 'rankings.html';
+
+  // すぐランキングを表示すると名前の更新が反映前にデータを取得してしまうことがあるので
+  // 少し待ってからランキングに遷移するのだ！
+  window.setTimeout(function () {
+    window.location.href = 'rankings.html';
+  }, 1000);
 }
 
 window.onload = function () {
