@@ -21,6 +21,7 @@ async function addPoint(point) {
   await db.collection(databaseName).add({
     point: point,
     name: "",
+    created_at: firebase.firestore.FieldValue.serverTimestamp(),
   })
     .then(function (docRef) {
       docRefID = docRef.id;
