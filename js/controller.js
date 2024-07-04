@@ -98,6 +98,13 @@ function finish() {
   document.getElementById('final-result').style.display = 'block';
   document.getElementById('final-result-point').textContent = totalPoint;
   addPoint(totalPoint);
+  if (totalPoint == 0) {
+    document.getElementById('register-name-form').style.display = 'none';
+    document.getElementById('retry-form').style.display = 'block';
+  } else {
+    document.getElementById('register-name-form').style.display = 'block';
+    document.getElementById('retry-form').style.display = 'none';
+  }
 }
 
 function clearTimeouts() {
