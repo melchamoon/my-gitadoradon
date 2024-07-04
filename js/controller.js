@@ -65,7 +65,12 @@ function answer(retire = false) {
   }
   let point = 0;
   if (selectedText == correctTitle) {
+    document.getElementById('result-success').style.display = 'block';
+    document.getElementById('result-fail').style.display = 'none';
     point = Math.round(((totalAnswerTime - ((Math.floor(Date.now()) - phaseStartTime) / 1000)) / totalAnswerTime) * 100);
+  } else {
+    document.getElementById('result-success').style.display = 'none';
+    document.getElementById('result-fail').style.display = 'block';
   }
   points.push(point);
   document.getElementById(`point-stage${stage}`).textContent = `${point}点`;
