@@ -17,80 +17,82 @@
 </head>
 
 <body>
-  <canvas id="canvas"></canvas>
+  <div class="container">
+    <canvas id="canvas"></canvas>
 
-  <div id="notice"></div>
-  <div id="answer-component" style="display: none;">
-    <div>
-      <input type="text" id="filterInput" placeholder="曲名(先頭一致)">
+    <div id="notice"></div>
+    <div id="answer-component" style="display: none;">
+      <div>
+        <input type="text" id="filterInput" placeholder="曲名(先頭一致)">
+      </div>
+      <select id="itemSelect"></select>
     </div>
-    <select id="itemSelect"></select>
-  </div>
 
-  <div style="margin: 8px;">
-    <button id="answer-button" onClick="answer();" style="display: none;">回答するのだ！</button>
-    <button id="start-button" onClick="start();">開始するのだ！</button>
-  </div>
+    <div style="margin: 8px;">
+      <button id="answer-button" onClick="answer();" style="display: none;">回答するのだ！</button>
+      <button id="start-button" onClick="start();">開始するのだ！</button>
+    </div>
 
-  <div id="result-component" style="display: none;">
-    <table>
-      <tr>
-        <td style="text-align: right;">あなたの回答:</td>
-        <td><span id="yourAnswer"></span></td>
-      </tr>
-      <tr>
-        <td style="text-align: right;">正解:</td>
-        <td><span id="correctAnswer"></span></td>
-      </tr>
-    </table>
-  </div>
+    <div id="result-component" style="display: none;">
+      <table>
+        <tr>
+          <td style="text-align: right;">あなたの回答:</td>
+          <td><span id="yourAnswer"></span></td>
+        </tr>
+        <tr>
+          <td style="text-align: right;">正解:</td>
+          <td><span id="correctAnswer"></span></td>
+        </tr>
+      </table>
+    </div>
 
-  <div id="final-result" style="display: none;">
-    <p>
-      最終スコアは <span id="final-result-point"></span> 点なのだ！<br />
-      よかったら名前を教えてくれなのだ！<br />
-      <input name="input-name" type="text" id="input-name" />
-      <button id="submit-name-button" onClick="submitName()">登録</button>
-    </p>
-  </div>
+    <div id="final-result" style="display: none;">
+      <p>
+        最終スコアは <span id="final-result-point"></span> 点なのだ！<br />
+        よかったら名前を教えてくれなのだ！<br />
+        <input name="input-name" type="text" id="input-name" />
+        <button id="submit-name-button" onClick="submitName()">登録</button>
+      </p>
+    </div>
 
-  <div id="point" style="display: none;">
-    <p>現在の得点</p>
-    <table class="table">
-      <tr>
-        <td>1曲目</td>
-        <td id="point-stage1">?点</td>
-      </tr>
-      <tr>
-        <td>2曲目</td>
-        <td id="point-stage2">?点</td>
-      </tr>
-      <tr>
-        <td>3曲目</td>
-        <td id="point-stage3">?点</td>
-      </tr>
-      <tr>
-        <td>4曲目</td>
-        <td id="point-stage4">?点</td>
-      </tr>
-      <tr>
-        <td>5曲目</td>
-        <td id="point-stage5">?点</td>
-      </tr>
-    </table>
-  </div>
+    <div id="point" style="display: none;">
+      <p>現在の得点</p>
+      <table class="table">
+        <tr>
+          <td>1曲目</td>
+          <td id="point-stage1">?点</td>
+        </tr>
+        <tr>
+          <td>2曲目</td>
+          <td id="point-stage2">?点</td>
+        </tr>
+        <tr>
+          <td>3曲目</td>
+          <td id="point-stage3">?点</td>
+        </tr>
+        <tr>
+          <td>4曲目</td>
+          <td id="point-stage4">?点</td>
+        </tr>
+        <tr>
+          <td>5曲目</td>
+          <td id="point-stage5">?点</td>
+        </tr>
+      </table>
+    </div>
 
-  <div id="how-to-play">
-    <p>【遊び方】</p>
-    <p>
-      ちょっとだけ見える楽曲のジャケットから曲名を当てるのだ！<br />
-      当てるのが早いほど得点が高いのだ！<br />
-      5曲連続で出題されるので、その合計得点で勝負なのだ！
-    </p>
-  </div>
+    <div id="how-to-play">
+      <p>【遊び方】</p>
+      <p>
+        ちょっとだけ見える楽曲のジャケットから曲名を当てるのだ！<br />
+        当てるのが早いほど得点が高いのだ！<br />
+        5曲連続で出題されるので、その合計得点で勝負なのだ！
+      </p>
+    </div>
 
-  <div style="margin: 10px;" id="ranking-link">
-    <button onClick="window.location.href = 'rankings.html'">ランキングを見るのだ！</button>
+    <div style="margin: 10px;" id="ranking-link">
+      <button onClick="window.location.href = 'rankings.html'">ランキングを見るのだ！</button>
+    </div>
   </div>
 </body>
 

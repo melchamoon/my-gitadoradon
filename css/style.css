@@ -7,3 +7,19 @@
     border: 1px solid black;
   }
 }
+
+body {
+  position: relative;
+}
+
+#canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+.container {
+  width: 384px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
