@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Language" content="ja">
-  <meta name="viewport"
-    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0,minimal-ui">
+  <meta name="viewport" content="width=device-width,user-scalable=yes">
   <title>超視力！マイ・ギタドラドンなのだ！</title>
   <script type="text/javascript" src="js/music.js"></script>
   <script type="text/javascript" src="js/controller.js"></script>
@@ -20,92 +19,94 @@
   <div class="container">
     <canvas id="canvas"></canvas>
 
-    <div id="notice"></div>
-    <div id="answer-component" style="display: none;">
-      <div>
-        <input type="text" id="filterInput" placeholder="曲名(先頭一致)">
+    <div style="padding: 8px;">
+      <div id="notice"></div>
+      <div id="answer-component" style="display: none;">
+        <div>
+          <input type="text" id="filterInput" placeholder="曲名(先頭一致)">
+        </div>
+        <select id="itemSelect" style="width: 370px;"></select>
       </div>
-      <select id="itemSelect" style="width: 384px;"></select>
-    </div>
 
-    <div style="margin: 8px;">
-      <button id="answer-button" onClick="answer();" style="display: none;">回答するのだ！</button>
-      <button id="start-button" onClick="start();">開始するのだ！</button>
-    </div>
-
-    <div id="result-component" style="display: none;">
-      <p style="color: green; font-weight: bold;" id="result-success">正解なのだ！すごいのだ！</p>
-      <p style="color: red; font-weight: bold;" id="result-fail">不正解なのだ！難しかったのだ…</p>
-      <table>
-        <tr>
-          <td style="text-align: right;">あなたの回答:</td>
-          <td><span id="yourAnswer"></span></td>
-        </tr>
-        <tr>
-          <td style="text-align: right;">正解:</td>
-          <td><span id="correctAnswer"></span></td>
-        </tr>
-      </table>
-    </div>
-
-    <div id="final-result" style="display: none;">
-      <p>
-        最終スコアは <span id="final-result-point"></span> 点なのだ！<br />
-      <div id="register-name-form">
-        よかったら名前を教えてくれなのだ！<br />
-        <input name="input-name" type="text" id="input-name" />
-        <button id="submit-name-button" onClick="submitName()">登録</button>
+      <div style="margin: 8px;">
+        <button id="answer-button" onClick="answer();" style="display: none;">回答するのだ！</button>
+        <button id="start-button" onClick="start();">開始するのだ！</button>
       </div>
-      <div id="retry-form">
-        <button onClick="location.reload();">もう一度チャレンジするのだ！</button>
+
+      <div id="result-component" style="display: none;">
+        <p style="color: green; font-weight: bold;" id="result-success">正解なのだ！すごいのだ！</p>
+        <p style="color: red; font-weight: bold;" id="result-fail">不正解なのだ！難しかったのだ…</p>
+        <table>
+          <tr>
+            <td style="text-align: right;">あなたの回答:</td>
+            <td><span id="yourAnswer"></span></td>
+          </tr>
+          <tr>
+            <td style="text-align: right;">正解:</td>
+            <td><span id="correctAnswer"></span></td>
+          </tr>
+        </table>
       </div>
-      </p>
-    </div>
 
-    <div id="point" style="display: none;">
-      <table class="table" style="width: 100%;">
-        <tr>
-          <td style="white-space: nowrap;">1曲目</td>
-          <td style="white-space: nowrap;" id="point-stage1">?点</td>
-          <td id="title-stage1">?????????</td>
-        </tr>
-        <tr>
-          <td style="white-space: nowrap;">2曲目</td>
-          <td style="white-space: nowrap;" id="point-stage2">?点</td>
-          <td id="title-stage2">?????????</td>
-        </tr>
-        <tr>
-          <td style="white-space: nowrap;">3曲目</td>
-          <td style="white-space: nowrap;" id="point-stage3">?点</td>
-          <td id="title-stage3">?????????</td>
-        </tr>
-        <tr>
-          <td style="white-space: nowrap;">4曲目</td>
-          <td style="white-space: nowrap;" id="point-stage4">?点</td>
-          <td id="title-stage4">?????????</td>
-        </tr>
-        <tr>
-          <td style="white-space: nowrap;">5曲目</td>
-          <td style="white-space: nowrap;" id="point-stage5">?点</td>
-          <td id="title-stage5">?????????</td>
-        </tr>
-      </table>
-    </div>
+      <div id="final-result" style="display: none;">
+        <p>
+          最終スコアは <span id="final-result-point"></span> 点なのだ！<br />
+        <div id="register-name-form">
+          よかったら名前を教えてくれなのだ！<br />
+          <input name="input-name" type="text" id="input-name" />
+          <button id="submit-name-button" onClick="submitName()">登録</button>
+        </div>
+        <div id="retry-form">
+          <button onClick="location.reload();">もう一度チャレンジするのだ！</button>
+        </div>
+        </p>
+      </div>
 
-    <div id="how-to-play">
-      <p>【遊び方】</p>
-      <p>
-        ちょっとだけ見える楽曲のジャケットから曲名を当てるのだ！<br />
-        当てるのが早いほど得点が高いのだ！<br />
-        5曲連続で出題されるので、その合計得点で勝負なのだ！<br />
-        要望があれば<a href="https://x.com/melchamoon" target="_blank">こいつ</a>に連絡するのだ！<br />
-        一通り遊んだら <a href="https://www.konami.com/amusement/products/search/?cat=am&series=BEMANI"
-          target="_blank">KONMAI</a> の音楽ゲームを遊びに行くのだ！
-      </p>
-    </div>
+      <div id="point" style="display: none;">
+        <table class="table" style="width: 100%;">
+          <tr>
+            <td style="white-space: nowrap;">1曲目</td>
+            <td style="white-space: nowrap;" id="point-stage1">?点</td>
+            <td id="title-stage1">?????????</td>
+          </tr>
+          <tr>
+            <td style="white-space: nowrap;">2曲目</td>
+            <td style="white-space: nowrap;" id="point-stage2">?点</td>
+            <td id="title-stage2">?????????</td>
+          </tr>
+          <tr>
+            <td style="white-space: nowrap;">3曲目</td>
+            <td style="white-space: nowrap;" id="point-stage3">?点</td>
+            <td id="title-stage3">?????????</td>
+          </tr>
+          <tr>
+            <td style="white-space: nowrap;">4曲目</td>
+            <td style="white-space: nowrap;" id="point-stage4">?点</td>
+            <td id="title-stage4">?????????</td>
+          </tr>
+          <tr>
+            <td style="white-space: nowrap;">5曲目</td>
+            <td style="white-space: nowrap;" id="point-stage5">?点</td>
+            <td id="title-stage5">?????????</td>
+          </tr>
+        </table>
+      </div>
 
-    <div style="margin: 10px;" id="ranking-link">
-      <button onClick="window.location.href = 'rankings.html'">ランキングを見るのだ！</button>
+      <div id="how-to-play">
+        <p>【遊び方】</p>
+        <p>
+          ちょっとだけ見える楽曲のジャケットから曲名を当てるのだ！<br />
+          当てるのが早いほど得点が高いのだ！<br />
+          5曲連続で出題されるので、その合計得点で勝負なのだ！<br />
+          要望があれば<a href="https://x.com/melchamoon" target="_blank">こいつ</a>に連絡するのだ！<br />
+          一通り遊んだら <a href="https://www.konami.com/amusement/products/search/?cat=am&series=BEMANI"
+            target="_blank">KONMAI</a> の音楽ゲームを遊びに行くのだ！
+        </p>
+      </div>
+
+      <div style="margin: 10px;" id="ranking-link">
+        <button onClick="window.location.href = 'rankings.html'">ランキングを見るのだ！</button>
+      </div>
     </div>
   </div>
 </body>
