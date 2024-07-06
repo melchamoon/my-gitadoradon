@@ -24,8 +24,8 @@ function start() {
 
 function nextQuestion() {
   setRandomMusic();
-  document.getElementById('filterInput').value = "";
-  refreshFilterInput("");
+  resetSelectMusic();
+  setMusics();
   document.getElementById('start-button').disabled = true;
   document.getElementById('result-component').style.display = 'none';
   for (let i = 0; i < waitingTime - 1; i++) {
@@ -193,20 +193,38 @@ function drawAllMasks(context, canvasX, canvasY, level) {
   }
 }
 
-function setMusics() {
+function setMusics(title = "", artist = "", version = "") {
   var select = document.getElementById('itemSelect');
-  musics.sort((a, b) => a[0].localeCompare(b[0]));
+
+  // 要素を全部消す
+  while (select.firstChild) {
+    select.removeChild(select.firstChild);
+  }
+
+  titles = title.split(',');
+  artists = artist.split(",");
+  versions = version.split(",");
+
+  musics.sort((a, b) => a[2].localeCompare(b[2]));
+  if (artist != "") {
+    musics.sort((a, b) => a[4].localeCompare(b[4]));
+  }
+
   for (var i = 0; i < musics.length; i++) {
+    let music = musics[i];
+    if (title != "" && !titles.some(title => music[2].startsWith(title))) continue;
+    if (artist != "" && !artists.some(artist => music[4].startsWith(artist))) continue;
+    if (version != "" && !versions.some(version => music[5] == version)) continue;
     var option = document.createElement('option');
-    option.text = musics[i][0];
+    option.text = toViewTitle(music);
     select.appendChild(option);
   }
 }
 
 function setRandomMusic() {
   const selectedMusic = musics[Math.floor(Math.random() * musics.length)];
-  correctTitle = selectedMusic[0];
-  const imageName = selectedMusic[1];
+  correctTitle = toViewTitle(selectedMusic);
+  const imageName = selectedMusic[0].toString().padStart(5, '0') + ".png";
   return new Promise((resolve, reject) => {
     bgImg.onload = () => resolve("Image loaded");
     bgImg.onerror = () => reject("Error loading image");
@@ -214,31 +232,30 @@ function setRandomMusic() {
   });
 };
 
-function hookFilterInput() {
-  document.getElementById('filterInput').addEventListener('input', function () {
-    refreshFilterInput(this.value);
+function resetSelectMusic() {
+  document.getElementById('itemSelect').selectedIndex = 0;
+  document.getElementById('filter-name').selectedIndex = 0;
+  document.getElementById('filter-artist').selectedIndex = 0;
+  document.getElementById('filter-version').selectedIndex = 0;
+}
+
+function hookFilter() {
+  document.getElementById('filter-name').addEventListener('input', function () {
+    document.getElementById('filter-artist').selectedIndex = 0;
+    document.getElementById('filter-version').selectedIndex = 0;
+    setMusics(this.value, "", "");
+  });
+  document.getElementById('filter-artist').addEventListener('input', function () {
+    document.getElementById('filter-name').selectedIndex = 0;
+    document.getElementById('filter-version').selectedIndex = 0;
+    setMusics("", this.value, "");
+  });
+  document.getElementById('filter-version').addEventListener('input', function () {
+    document.getElementById('filter-name').selectedIndex = 0;
+    document.getElementById('filter-artist').selectedIndex = 0;
+    setMusics("", "", this.value);
   });
 };
-
-function refreshFilterInput(value) {
-  var inputText = value.toLowerCase();
-  var select = document.getElementById('itemSelect');
-  var options = select.options;
-  var isFirst = false;
-
-  for (var i = 0; i < options.length; i++) {
-    var optionText = options[i].text.toLowerCase();
-    if (optionText.startsWith(inputText)) {
-      options[i].style.display = '';
-      if (!isFirst) {
-        select.selectedIndex = i;
-        isFirst = true;
-      }
-    } else {
-      options[i].style.display = 'none';
-    }
-  }
-}
 
 function submitName() {
   let name = document.getElementById('input-name').value;
@@ -256,6 +273,13 @@ function submitName() {
   }, 1000);
 }
 
+function toViewTitle(music) {
+  let title = music[1];
+  let artist = music[3];
+  if (artist == "") return title;
+  return `${title} (${artist})`;
+}
+
 window.onload = function () {
   bgImg.src = `images/title.png`;
   bgImg.onload = function () {
@@ -263,5 +287,5 @@ window.onload = function () {
   };
 
   setMusics();
-  hookFilterInput();
+  hookFilter();
 };
