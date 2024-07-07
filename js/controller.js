@@ -227,7 +227,7 @@ function setMusics(title = "", artist = "", version = "") {
     let music = musics[i];
     if (title != "" && !titles.some(title => music[2].startsWith(title))) continue;
     if (artist != "" && !artists.some(artist => music[4].startsWith(artist))) continue;
-    if (version != "" && !versions.some(version => music[5] == version)) continue;
+    if (version != "" && !versions.some(version => music[5].includes(version))) continue;
     var option = document.createElement('option');
     option.text = toViewTitle(music);
     select.appendChild(option);
