@@ -1,6 +1,7 @@
 let bgImg = new Image();
 // 各フェーズの秒数
 const waitingTime = 4;
+const startTime = 1;
 const timeLevel1 = 20;
 const timeLevel2 = 20;
 const timeLevel3 = 20;
@@ -14,12 +15,17 @@ let points = [];
 let timeoutIDs = [];
 let correctTitle = "";
 let phaseStartTime = 0;
+let isLoading = true;
 
 function start() {
   document.getElementById('how-to-play').style.display = 'none';
   document.getElementById('point').style.display = 'block';
   document.getElementById('ranking-link').style.display = 'none';
   nextQuestion();
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 function nextQuestion() {
@@ -31,29 +37,36 @@ function nextQuestion() {
   for (let i = 0; i < waitingTime - 1; i++) {
     timeoutIDs.push(window.setTimeout(function () { drawImage(0, waitingTime - 1 - i); }, 1000 * i));
   }
-  timeoutIDs.push(window.setTimeout(function () { drawImage(0, "START"); }, 1000 * (waitingTime - 1)));
-  let remainingTime = timeLevel1 + timeLevel2 + timeLevel3;
-  timeoutIDs.push(window.setTimeout(function () {
-    drawImage(1);
-    document.getElementById('start-button').style.display = 'none';
-    document.getElementById('answer-button').style.display = 'block';
-    document.getElementById('answer-component').style.display = 'block';
-    document.getElementById('notice').textContent = `残り時間 ${remainingTime} 秒`;
-    let remainingTimer = window.setInterval(function () {
-      remainingTime--;
+  timeoutIDs.push(window.setTimeout(async function () {
+    while (isLoading) {
+      drawImage(0, "LOADING");
+      await sleep(100);
+    }
+    drawImage(0, "START");
+    let remainingTime = timeLevel1 + timeLevel2 + timeLevel3;
+    timeoutIDs.push(window.setTimeout(function () {
+      drawImage(1);
+      document.getElementById('start-button').style.display = 'none';
+      document.getElementById('answer-button').style.display = 'block';
+      document.getElementById('answer-component').style.display = 'block';
       document.getElementById('notice').textContent = `残り時間 ${remainingTime} 秒`;
-    }, 1000);
-    timeoutIDs.push(remainingTimer);
-    window.setTimeout(function () {
-      clearInterval(remainingTimer);
-    }, 1000 * remainingTime);
-    phaseStartTime = Math.floor(Date.now());
-  }, 1000 * waitingTime));
-  timeoutIDs.push(window.setTimeout(function () { drawImage(2); }, 1000 * (waitingTime + timeLevel1)));
-  timeoutIDs.push(window.setTimeout(function () { drawImage(3); }, 1000 * (waitingTime + timeLevel1 + timeLevel2)));
-  timeoutIDs.push(window.setTimeout(function () {
-    answer(true);
-  }, 1000 * (waitingTime + timeLevel1 + timeLevel2 + timeLevel3)));
+      let remainingTimer = window.setInterval(function () {
+        remainingTime--;
+        document.getElementById('notice').textContent = `残り時間 ${remainingTime} 秒`;
+      }, 1000);
+      timeoutIDs.push(remainingTimer);
+      window.setTimeout(function () {
+        clearInterval(remainingTimer);
+      }, 1000 * remainingTime);
+      phaseStartTime = Math.floor(Date.now());
+    }, 1000 * startTime));
+    timeoutIDs.push(window.setTimeout(function () { drawImage(2); }, 1000 * (startTime + timeLevel1)));
+    timeoutIDs.push(window.setTimeout(function () { drawImage(3); }, 1000 * (startTime + timeLevel1 + timeLevel2)));
+    timeoutIDs.push(window.setTimeout(function () {
+      answer(true);
+    }, 1000 * (startTime + timeLevel1 + timeLevel2 + timeLevel3)));
+  }, 1000 * (waitingTime - 1)));
+
 };
 
 function answer(retire = false) {
@@ -225,11 +238,13 @@ function setRandomMusic() {
   const selectedMusic = musics[Math.floor(Math.random() * musics.length)];
   correctTitle = toViewTitle(selectedMusic);
   const imageName = selectedMusic[0].toString().padStart(5, '0') + ".png";
-  return new Promise((resolve, reject) => {
+  isLoading = true;
+  let promise = new Promise((resolve, reject) => {
     bgImg.onload = () => resolve("Image loaded");
     bgImg.onerror = () => reject("Error loading image");
     bgImg.src = `images/${imageName}`;
   });
+  promise.then((_) => isLoading = false);
 };
 
 function resetSelectMusic() {
