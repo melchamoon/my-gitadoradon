@@ -214,9 +214,9 @@ function setMusics(title = "", artist = "", version = "") {
     select.removeChild(select.firstChild);
   }
 
-  titles = title.split(',');
-  artists = artist.split(",");
-  versions = version.split(",");
+  let titles = title.split(',');
+  let artists = artist.split(",");
+  let versions = version.split(",");
 
   musics.sort((a, b) => a[2].localeCompare(b[2]));
   if (artist != "") {
@@ -235,8 +235,13 @@ function setMusics(title = "", artist = "", version = "") {
 }
 
 function setRandomMusic() {
-  const selectedMusic = musics[Math.floor(Math.random() * musics.length)];
-  correctTitle = toViewTitle(selectedMusic);
+  let selectedMusic = "";
+  let retryCount = 0;
+  do {
+    selectedMusic = musics[Math.floor(Math.random() * musics.length)];
+    correctTitle = toViewTitle(selectedMusic);
+    retryCount++;
+  } while (titles.includes(correctTitle) && retryCount < 100);
   const imageName = selectedMusic[0].toString().padStart(5, '0') + ".png";
   isLoading = true;
   let promise = new Promise((resolve, reject) => {
