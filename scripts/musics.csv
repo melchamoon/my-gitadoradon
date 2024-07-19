@@ -1,4 +1,4 @@
-id,title,title_yomi,artist_name,artist_yomi,version,
+id,title,title_yomi,artist_name,artist_yomi,version,old
 47,Across the nightmare,ACROSSTHENIGHTMARE,Jimmy Weckl,JIMMYWECKL,GF2&DM1,0
 48,Cutie pie,CUTIEPIE,Toshio Sakurai,TOSHIOSAKURAI,GF1,0
 49,FIRE,FIRE,泉 陸奥彦,いずみむつひこ,GF1,0
@@ -87,7 +87,7 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 138,ツミナガラ... と彼女は謂ふ,みつながらとかのじょはいふ,あさき,あさき,GF8&DM7,0
 139,三毛猫ロック,みけねころっく,亜熱帯マジ-SKA爆弾,あねったいまじSKAばくだん,GF8&DM7,0
 140,人にやさしく,ひとにやさしく,,,"GF8&DM7,有名楽曲",0
-141,美丽的家乡,めいりーでじあしゃん,劉 鋒,りゅうほう,GF8&DM7,0
+141,美麗的家郷,めいりーでじあしゃん,劉 鋒,りゅうほう,GF8&DM7,0
 143,777,777,EeL,EEL,GF9&DM8,0
 144,Black horizon,BLACKHORIZON,Trick Trap,TRICKTRAP,GF9&DM8,0
 145,Country day,COUNTRYDAY,Anna Vieste,ANNAVIESTE,GF9&DM8,0
@@ -132,7 +132,7 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 186,Orbital Velocity,ORBITALVELOCITY,Jimmy Weckl,JIMMYWECKL,GF11&DM10,0
 187,Passion,PASSION,KUMIKO,KUMIKO,GF11&DM10,0
 188,Reaching for the Stars,REACHINGFORTHESTARS,serena,SERENA,GF11&DM10,0
-189,Real ～Lサイズの夢～,REALLさいずのゆめ,MAKI,MAKI,GF11&DM10,0
+189,Real 〜Lサイズの夢〜,REALLさいずのゆめ,MAKI,MAKI,GF11&DM10,0
 190,Tail Spin,TAILSPIN,Des-ROW feat.DENNIS GUNN,DESROWFEATDENNISGUNN,GF11&DM10,0
 191,WE ARE,WEARE,TЁЯRA,TERRA,GF11&DM10,0
 192,YARA TUM KAHAN?,YARATUMKAHAN,ASMAT,ASMAT,GF11&DM10,0
@@ -147,14 +147,14 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 202,Aithon,AITHON,Kozo Nakamura,KOZONAKAMURA,ee' MALL 2nd avenue,0
 203,Marigold,MARIGOLD,SHORTCUTS,SHORTCUTS,ee' MALL 2nd avenue,0
 204,Wall Street down-sizer,WALLSTREETDOWNSIZER,Thomas Howard Lichtenstein,THOMASHOWARDLICHTENSTEIN,ee' MALL 2nd avenue,0
-205,バリバリブギ ～涙のフルーツポンチ～,ばりばりぶぎなみだのふるーつぽんち,Hedel Bendel,HEDELBENDEL,ee' MALL 2nd avenue,0
+205,バリバリブギ 〜涙のフルーツポンチ〜,ばりばりぶぎなみだのふるーつぽんち,Hedel Bendel,HEDELBENDEL,ee' MALL 2nd avenue,0
 206,ペパーミントは私の敵,ぺぱーみんとはわたしのてき,常盤ゆう,ときわゆう,ee' MALL 2nd avenue,0
 207,空言の海,むなごとのそら,音々,ねね,ee' MALL 2nd avenue,0
 208,螺子之人,ねじのひと,あさき,あさき,ee' MALL 2nd avenue,0
 210,AFTER A HARD DAY,AFTERAHARDDAY,Brad Holmes,BRADHOLMES,GF&DMV,0
 211,DOKI☆DOKI,DOKIDOKI,TAEKO,TAEKO,GF&DMV,0
 212,Desert Rose,DESERTROSE,Kozo Nakamura,KOZONAKAMURA,GF&DMV,0
-213,Die Zauberflöte,DIEZAUBERFLTE,わんにゃん☆パニックス,わんにゃんぱにっくす,GF&DMV,0
+213,Die Zauberflote,DIEZAUBERFLTE,わんにゃん☆パニックス,わんにゃんぱにっくす,GF&DMV,0
 214,ESCAPE TO THE SKY★彡,ESCAPETOTHESKY,TЁЯRA,TERRA,GF&DMV,0
 215,Endless cruising,ENDLESSCRUISING,Des-ROW feat.SHIGE,DESROWFEATSHIGE,GF&DMV,0
 216,Fairy Tales,FAIRYTALES,Mutsuhiko Izumi,MUTSUHIKOIZUMI,GF&DMV,0
@@ -180,7 +180,7 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 236,哀愁のコリゴリラ,あいしゅうのこりごりら,ハンサムジェットプロジェクト feat. みずしな孝之,はんさむじぇっとぷろじぇくとFEATみずしなたかゆき,GF&DMV,0
 237,無常の星,むじょうのほし,P-Bombers,PBOMBERS,GF&DMV,0
 239,Atalante,ATALANTE,Kozo Nakamura,KOZONAKAMURA,GF&DMV2,0
-240,CaptivAte～裁き～,CAPTIVEATEさばき,DJ YOSHITAKA feat.A/I,DJYOSHITAKAFEATAI,GF&DMV2,0
+240,CaptivAte〜裁き〜,CAPTIVEATEさばき,DJ YOSHITAKA feat.A/I,DJYOSHITAKAFEATAI,GF&DMV2,0
 241,GLIDE,GLIDE,TЁЯRA,TERRA,GF&DMV2,0
 242,Green Lime,GREENLIME,肥塚良彦,こえづかよしひこ,GF&DMV2,0
 243,JJ-road,JJROAD,JJ-road,JJROAD,GF&DMV2,0
@@ -207,7 +207,7 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 265,Ring,RING,Kozo Nakamura,KOZONAKAMURA,GF&DMV3,0
 266,Ru-Ru-Ru,RURURU,Sis Bond Chit,SISBONDCHIT,GF&DMV3,0
 267,Venus,VENUS,Tatsh+RayZY,TATSHRAYZY,GF&DMV3,0
-268,ZËNITH,ZNITH,TËЯRA,TERRA,GF&DMV3,0
+268,ZENITH,ZNITH,TËЯRA,TERRA,GF&DMV3,0
 269,αρχη,APXN,Dormir,DORMIR,GF&DMV3,0
 270,ギタードライブ,ぎたーどらいぶ,Handsome JET,HANDSOMEJET,GF&DMV3,0
 271,ミラージュ・レジデンス,みらーじゅれじでんす,Jimmy Weckl,JIMMYWECKL,GF&DMV3,0
@@ -228,8 +228,8 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 287,MODEL DD8,MODELDD8,Mutsuhiko Izumi feat. Marty Friedman,MUTSUHIKOIZUMIFEATMARTYFRIEDMAN,GF&DMV4,0
 288,PRIME LIGHT,PRIMELIGHT,TAG,TAG,GF&DMV4,0
 289,Raining Sunshine,RAININGSUNSHINE,Nina Lee Kaminsky,NINALEEKAMINSKY,GF&DMV4,0
-290,RЁVOLUTIΦN,RVOLUTIN,TЁЯRA,TERRA,GF&DMV4,0
-291,R＃1,R1,colors,COLORS,GF&DMV4,0
+290,REVOLUTION,RVOLUTIN,TЁЯRA,TERRA,GF&DMV4,0
+291,R#1,R1,colors,COLORS,GF&DMV4,0
 292,Slang,SLANG,Kozo Nakamura,KOZONAKAMURA,GF&DMV4,0
 293,Strike Party!!!,STRIKEPARTY,BeForU,BEFORU,"GF&DMV4,有名楽曲",0
 294,Swimming In Love,SWIMMINGINLOVE,ナツキ,なつき,GF&DMV4,0
@@ -241,9 +241,9 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 300,murmur twins (guitar pop ver.),MURMURTWINSGUITARPOPVER,yu_tokiwa.djw merge scl.gtr,YUTOKIWADJWMERGESCLGTR,GF&DMV4,0
 301,ガラナ,がらな,,,"GF&DMV4,有名楽曲",0
 302,一網打尽,いちもうだじん,96,96,GF&DMV4,0
-303,太陽～T・A・I・Y・O～(ANOTHER SENSE EDITION),たいようTAIYOANOTHERSENSEEDITION,星野奏子,ほしのかなこ,GF&DMV4,0
+303,太陽〜T・A・I・Y・O〜(ANOTHER SENSE EDITION),たいようTAIYOANOTHERSENSEEDITION,星野奏子,ほしのかなこ,GF&DMV4,0
 304,恋は臆病,こいはおくびょう,達見 恵,たつみめぐみ,GF&DMV4,0
-305,極東史記,ごくとうしき,あさき,あさき,GF&DMV4,0
+305,極東史記,きょくとうしき,あさき,あさき,GF&DMV4,0
 307,A.DOGMA,ADOGMA,あさき,あさき,GF&DMV5,0
 308,ATOMS,ATOMS,Rotten Blotch,ROTTENBLOTCH,GF&DMV5,0
 309,Blue Forest,BLUEFOREST,Mutsuhiko Izumi,MUTSUHIKOIZUMI,GF&DMV5,0
@@ -263,7 +263,7 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 323,VANESSA -転生編-,VANESSAてんせいへん,朱雀 VS. TAG,すざくVSTAG,GF&DMV5,0
 324,in control,INCONTROL,RYDER,RYDER,GF&DMV5,0
 325,からふるぱすてる,からふるぱすてる,ki☆ki,KIKI,GF&DMV5,0
-326,ゴーイング　マイ　ウェイ！,ごーいんぐまいうぇい,達見 恵 featured by 佐野宏晃,たつみめぐみFEATUREDBYさのひろあき,GF&DMV5,0
+326,ゴーイング マイ ウェイ！,ごーいんぐまいうぇい,達見 恵 featured by 佐野宏晃,たつみめぐみFEATUREDBYさのひろあき,GF&DMV5,0
 327,ヒコーキ,ひこーき,colors,COLORS,GF&DMV5,0
 328,ヒトリアソビ,ひとりあそび,iNO,INO,GF&DMV5,0
 329,凛として咲く花の如く,りんとしてさくはなのごとく,紅色リトマス,べにいろりとます,GF&DMV5,0
@@ -283,7 +283,7 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 344,Icicles,ICICLES,Jimmy Weckl,JIMMYWECKL,GF&DMV6,0
 345,Jungle,JUNGLE,Mutsuhiko Izumi with Jimmy Weckl,MUTSUHIKOIZUMIWITHJIMMYWECKL,GF&DMV6,0
 346,NIL,NIL,Nelo,NELO,GF&DMV6,0
-347,OVER THE LIMIT!,OVERTHELIMIT,伊藤賢治,いとうけんじ,GF&DMV6,0
+347,OVER THE LIMIT！,OVERTHELIMIT,伊藤賢治,いとうけんじ,GF&DMV6,0
 348,Red,RED,Kozo Nakamura,KOZONAKAMURA,GF&DMV6,0
 349,Siren,SIREN,Sis Bond Chit,SISBONDCHIT,GF&DMV6,0
 350,Sky,SKY,Mutsuhiko Izumi,MUTSUHIKOIZUMI,GF&DMV6,0
@@ -294,7 +294,7 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 355,ガラスの小舟,がらすのこぶね,肥塚良彦,こえづかよしひこ,GF&DMV6,0
 356,ブルーバード,ぶるーばーど,,,"GF&DMV6,有名楽曲",0
 357,恐怖の右脳改革,きょうふのうのうかいかく,96,96,GF&DMV6,0
-358,情熱 fun!fun!,じょうねつFUNFUN,YAMATO組,YAMATOぐみ,GF&DMV6,0
+358,情熱 fun! fun!,じょうねつFUNFUN,YAMATO組,YAMATOぐみ,GF&DMV6,0
 359,風神雲龍伝,ふうじんうんりゅうでん,98,98,GF&DMV6,0
 361,Before Daybreak,BEFOREDAYBREAK,TAG,TAG,XG,0
 362,Believing,BELIEVING,阿部靖広,あべやすひろ,XG,0
@@ -309,7 +309,7 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 371,Einherjar,EINHERJAR,植松伸夫とわんにゃん☆パニックス,うえまつのぶおとわんにゃんぱにっくす,XG,0
 372,Excavation Damage,EXCAVATIONDAMAGE,浅田 靖,あさだやすし,XG,0
 373,HYPER JET LAND,HYPERJETLAND,泉 陸奥彦,いずみむつひこ,XG,0
-374,Hunter～どうしても欲しいもの～,HUNTERどうしてもほしいもの,達見 恵 featured by 佐野宏晃,たつみめぐみFEATUREDBYさのひろあき,XG,0
+374,Hunter〜どうしても欲しいもの〜,HUNTERどうしてもほしいもの,達見 恵 featured by 佐野宏晃,たつみめぐみFEATUREDBYさのひろあき,XG,0
 375,I Want It All,IWANTITALL,Benjamin Franklin,BENJAMINFRANKLIN,XG,0
 376,IMI,IMI,RYDER,RYDER,XG,0
 377,IMITATION TOUCH,IMITATIONTOUCH,柴田浩之,しばたひろゆき,XG,0
@@ -322,10 +322,10 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 384,No Way For One Will,NOWAYFORONEWILL,"TeeJayz,inc.",TEEJAYZINC,XG,0
 385,On top of the world,ONTOPOFTHEWORLD,LUCA,LUCA,XG,0
 386,Piranha,PIRANHA,Rotten Blotch,ROTTENBLOTCH,XG,0
-387,Shake and Shout!!,SHAKEANDSHOUT,伊藤賢治,いとうけんじ,XG,0
+387,Shake and Shout！！,SHAKEANDSHOUT,伊藤賢治,いとうけんじ,XG,0
 388,Sky Runner,SKYRUNNER,古川もとあき,ふるかわもとあき,XG,0
 389,Stay away,STAYAWAY,STIL,STIL,XG,0
-390,Trickster,TRICKSTER,,,XG,0
+390,Trickster,TRICKSTER,,,XG,1
 391,White wings,WHITEWINGS,阿部靖広,あべやすひろ,XG,0
 392,X-treme Grade,XTREMEGRADE,96,96,XG,0
 393,You've Got 2 Get Me,YOUVEGOT2GETME,Sota Fujimori feat. RIO,SOTAFUJIMORIFEATRIO,XG,0
@@ -335,7 +335,7 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 397,ほしふり,ほしふり,Sana,SANA,XG,0
 398,クリーンクリーン,くりーんくりーん,ブラックカプセル,ぶらっくかぷせる,XG,0
 399,ヒカリ,ひかり,mao,MAO,XG,0
-400,三毛猫JIVE&ジャイブ,みけねこJAVEじゃいぶ,小野秀幸,おのひでゆき,XG,0
+400,三毛猫JIVE＆ジャイブ,みけねこJAVEじゃいぶ,小野秀幸,おのひでゆき,XG,0
 401,天庭 おとこのこ編,てんていおとこのこへん,あさき,あさき,XG,0
 402,太陽の花,たいようのはな,DAIHEI,DAIHEI,XG,0
 403,幻想花,げんそうか,星野奏子,ほしのかなこ,XG,0
@@ -359,7 +359,7 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 422,EXCELSIOR DIVE,EXCELSIORDIVE,TAG,TAG,XG2,0
 423,HIT IN THE USA,HITINTHEUSA,,,"XG2,有名楽曲",0
 424,I can be!!,ICANBE,Hiromixxx,HIROMIXXX,XG2,0
-425,Illuminati ～光を求める者たち～,ILLUMINATIひかりをもとめるものたち,Dear Breeze Studio,DEARBREEZESTUDIO,XG2,0
+425,Illuminati 〜光を求める者たち〜,ILLUMINATIひかりをもとめるものたち,Dear Breeze Studio,DEARBREEZESTUDIO,XG2,0
 426,Jailbreak,JAILBREAK,Kozo Nakamura,KOZONAKAMURA,XG2,0
 427,Lepton,LEPTON,TIME CAPSULE Lab.,TIMECAPSULELAB,XG2,0
 428,Love Rox!,LOVEROX,Takao Nagatani,TAKAONAGATANI,XG2,0
@@ -392,11 +392,11 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 455,優勢オーバードーズ,ゆうせいおーばーどーず,PON,PON,XG2,0
 456,前髪,まえがみ,さかもとえいぞう&劇団レコード,さかもとえいぞうげきだんれこーど,XG2,0
 457,卒業,そつぎょう,ガガガSP,がががSP,"XG2,有名楽曲",0
-458,夢について　TYPE B,ゆめについてTYPEB,小野秀幸 feat. 96,おのひでゆきFEAT96,XG2,0
-459,夢について　TYPE C,ゆめについてTYPEC,小野秀幸 feat. 岡本裕美,おのひでゆきFEATおかもとひろみ,XG2,0
+458,夢について TYPE B,ゆめについてTYPEB,小野秀幸 feat. 96,おのひでゆきFEAT96,XG2,0
+459,夢について TYPE C,ゆめについてTYPEC,小野秀幸 feat. 岡本裕美,おのひでゆきFEATおかもとひろみ,XG2,0
 460,幻想雷神記,げんそうらいじんき,98,98,XG2,0
 461,明鏡止水 - Stop The Fire Mix,めいきょうしすいSTOPTHEFIREMIX,Sota Fujimori feat. Mutsuhiko Izumi,SOTAFUJIMORIFEATMUTSUHIKOIZUMI,XG2,0
-462,牛乳特急便 -まとめきれないRomantic style-,ぎゅうにゅうとっきゅうびんまとめきれないROMANTICSTYLE,キャプテンメタル,きゃぷてんめたる,XG2,0
+462,牛乳特急便 -まとめきれない Romantic style-,ぎゅうにゅうとっきゅうびんまとめきれないROMANTICSTYLE,キャプテンメタル,きゃぷてんめたる,XG2,0
 463,百鬼夜行,ひゃっきやこう,96,96,XG2,0
 464,紫の月,むらさきのつき,阿部靖広,あべやすひろ,XG2,0
 465,行き過ぎて後に,いきすぎてあとに,あさき,あさき,XG2,0
@@ -443,7 +443,7 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 507,Starlight Parade,STARLIGHTPARADE,肥塚良彦,こえづかよしひこ,XG3,0
 508,Summer Holiday,SUMMERHOLIDAY,達見 恵 featured by 佐野宏晃,たつみめぐみFEATUREDBYさのひろあき,XG3,0
 509,Xenon,XENON,千本松 仁,せんぼんまつじん,XG3,0
-510,concon～INAReMIX～,CONCONINAREMIX,S-C-U with OJ,SCUWITHOJ,XG3,0
+510,concon〜INAReMIX〜,CONCONINAREMIX,S-C-U with OJ,SCUWITHOJ,XG3,0
 511,overviews,OVERVIEWS,vox,VOX,XG3,0
 512,serial number,SERIALNUMBER,ピンクターボ,ぴんくたーぼ,XG3,0
 513,snow prism (GFDM ver.),SNOWPRISMGFDMVER,Qrispy Joybox,QRISPYJOYBOX,XG3,0
@@ -470,7 +470,7 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 534,群青と流星,ぐんじょうとりゅうせい,2B-Waves,2BWAVES,XG3,0
 535,耳たぶ2号,みみたぶ2ごう,,,"XG3,有名楽曲",0
 536,逆ナンされたのにドタキャン!!,ぎゃくなんされたのにどたきゃん,good-cool ft. すわひでお,GOODCOOLFTすわひでお,XG3,0
-537,隅田川夏恋歌～納涼mix,すみだがわかれんかのうりょうMIX,seiya-murai feat.ALT,SEIYAMURAIFEATALT,XG3,0
+537,隅田川夏恋歌〜納涼mix,すみだがわかれんかのうりょうMIX,seiya-murai feat.ALT,SEIYAMURAIFEATALT,XG3,0
 539,0時20分のRoulette,0じ20ふんのROULETTE,ApachE with T_da,APACHEWITHTDA,GITADORA,0
 540,Arena Sexarboris,ARENASEXARBORIS,Akhuta,AKHUTA,GITADORA,0
 541,Awaken Ver.G,AWAKENVERG,KOHTA,KOHTA,GITADORA,0
@@ -500,7 +500,7 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 565,Jasper,JASPER,TIME CAPSULE Lab.,TIMECAPSULELAB,GITADORA,0
 566,Joyeuse,JOYEUSE,ke-ji,KEJI,GITADORA,0
 567,Last Song,LASTSONG,AIKO OI,AIKOOI,GITADORA,0
-568,Like＆Love,LIKELOVE,Tatsh feat. REN,TATSHFEATREN,GITADORA,0
+568,Like&Love,LIKELOVE,Tatsh feat. REN,TATSHFEATREN,GITADORA,0
 569,Link up,LINKUP,chocochips,CHOCOCHIPS,GITADORA,0
 570,MANDARA,MANDARA,さたな,さたな,GITADORA,0
 571,MODEL FT3,MODELFT3,Mutsuhiko Izumi,MUTSUHIKOIZUMI,GITADORA,0
@@ -546,7 +546,7 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 611,お米の美味しい炊き方、そしてお米を食べることによるその効果。,おこめのおいしいたきかたそしておこめをたべることによるそのこうか,大日本鉄倶楽部【あさき&96】,だいにほんてつくらぶあさき96,GITADORA,0
 612,ぐっばい my crybaby,ぐっばいMYCRYBABY,鈴木 友里絵,すずきゆりえ,GITADORA,0
 613,こわれそうなもの,こわれそうなもの,永谷 喬夫,ながたにたかお,GITADORA,0
-614,ちくわパフェだよ☆CKP,ちくわぱふぇだよCKP,日向美ビタースイーツ♪,ひなたみびたーすいーつ,GITADORA,0
+614,ちくわパフェだよ☆ＣＫＰ,ちくわぱふぇだよCKP,日向美ビタースイーツ♪,ひなたみびたーすいーつ,GITADORA,0
 615,めうめうぺったんたん！！,めうめうぺったんたん,日向美ビタースイーツ♪,ひなたみびたーすいーつ,GITADORA,0
 616,もぎたてANGEL,もぎたてANGEL,YAMATO組－,YAMATOぐみ,GITADORA,0
 617,アルストロメリア (GITADORA Ver.),あるすとろめりあGITADORAVER,TAG,TAG,GITADORA,0
@@ -597,7 +597,7 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 662,轟け!恋のビーンボール!!～96バット砲炸裂!GITADORAシリーズMVP弾!～,とどろけこいのぴんぼーる96ばっとほうさくれつGITADORAしりーずMVPだん,ダイナミック野球兄弟 v.s. クロスファイヤーPrim,だいなみっくやきゅうきょうだいVSくろすふぁいやーPRIM,GITADORA,0
 663,辞世テンプレート,じせいてんぷれーと,ギラギラ眼帯団,ぎらぎらがんたいだん,GITADORA,0
 664,迎撃のフォルテ,げいげきのふぉるて,めろでぃーリアン,めろでぃーりあん,GITADORA,0
-665,野球の遊び方　そしてその歴史　～決定版～,やきゅうのあそびかたそしてそのれきしけっていばん,あさき大監督,あさきだいかんとく,GITADORA,0
+665,野球の遊び方 そしてその歴史 ～決定版～,やきゅうのあそびかたそしてそのれきしけっていばん,あさき大監督,あさきだいかんとく,GITADORA,0
 666,金輪際のエレジー,こんりんざいのえれじー,劇団レコードfeat.浅葉リオ,げきだんれこーどFEATあさばりお,GITADORA,0
 667,雨ノチHello,あめのちHELLO,TLION69,TLION69,GITADORA,0
 668,雷君,らいくん,PON,PON,GITADORA,0
@@ -669,7 +669,7 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 735,走れメロンパン,はしれめろんぱん,日向美ビタースイーツ♪,ひなたみびたーすいーつ,GITADORA OverDrive,0
 736,過食性:アイドル症候群,かしょくせいあいどるしょうこうぐん,スズム,すずむ,"GITADORA OverDrive,有名楽曲",0
 737,都会征服Girls☆,とかいせいふくGIRLS,日向美ビタースイーツ♪,ひなたみびたーすいーつ,GITADORA OverDrive,0
-738,魚氷に上り　耀よひて,うおひにのぼりかがよひて,あさき,あさき,GITADORA OverDrive,0
+738,魚氷に上り 耀よひて,うおひにのぼりかがよひて,あさき,あさき,GITADORA OverDrive,0
 740,3 A.M. ディテクティブ・ゲーム,3AMでぃてくてぃぶげーむ,日向美ビタースイーツ♪,ひなたみびたーすいーつ,GITADORA Tri-Boost,0
 741,"Alternative Tactics, Second Urgent Issue",ALTERNATIVETACTICSSECONDURGENTISSUE,大和,やまと,"GITADORA Tri-Boost,有名楽曲",0
 742,Anathema,ANATHEMA,あさき,あさき,GITADORA Tri-Boost,0
@@ -693,7 +693,7 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 760,Golden galaxy,GOLDENGALAXY,Trick Trap,TRICKTRAP,GITADORA Tri-Boost,0
 761,"Good bye, Summer～さよならは言わない～",GOODBYESUMMERさよならはいわせない,私立BEMANI学園軽音部 OB,しりつBEMANIがくえんけいおんぶOB,GITADORA Tri-Boost,0
 762,Graphic Melody,GRAPHICMELODY,山本真央樹 feat.朔白,やまもとまおきFEATさくはく,GITADORA Tri-Boost,0
-763,HAPPY! LUCKY! SUNFLOWER!,HAPPYLUCKYSUNFLOWER,ひまわり*パンチ,ひまわりぱんち,GITADORA Tri-Boost,0
+763,HAPPY！ LUCKY！ SUNFLOWER！,HAPPYLUCKYSUNFLOWER,ひまわり*パンチ,ひまわりぱんち,GITADORA Tri-Boost,0
 764,In The Breeze,INTHEBREEZE,96 & Sota ft. Mayumi Morinaga,96SOTAFTMAYUMIMORINAGA,GITADORA Tri-Boost,0
 765,Just Believe,JUSTBELIEVE,小寺可南子,こてらかなこ,GITADORA Tri-Boost,0
 766,MIND ERUPTION,MINDERUPTION,山本真央樹,やまもとまおき,GITADORA Tri-Boost,0
@@ -725,7 +725,7 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 792,neko*neko,NEKONEKO,日向美ビタースイーツ♪,ひなたみびたーすいーつ,GITADORA Tri-Boost,0
 793,wound,WOUND,KEENO,KEENO,GITADORA Tri-Boost,0
 794,あたしを○○してください,あたしをしてください,PON,PON,GITADORA Tri-Boost,0
-795,いま　我々にできること,いまわれわれにできること,大日本森倶楽部 feat. Koh Nishino,だいにほんもりくらぶFEATKOHNISHINO,GITADORA Tri-Boost,0
+795,いま 我々にできること,いまわれわれにできること,大日本森倶楽部 feat. Koh Nishino,だいにほんもりくらぶFEATKOHNISHINO,GITADORA Tri-Boost,0
 796,とびっきりのふわっふわ,とびっきりのふわっふわ,日向美ビタースイーツ♪,ひなたみびたーすいーつ,GITADORA Tri-Boost,0
 797,どきドキ バレンタイン,どきどきばれんたいん,ひまわり*パンチ,ひまわりぱんち,GITADORA Tri-Boost,0
 798,はなまるぴっぴはよいこだけ,はなまるぴっぴはよいこだけ,A応P,A応P,"GITADORA Tri-Boost,有名楽曲",0
@@ -848,7 +848,7 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 917,SUPER SUMMER SALE,SUPERSUMMERSALE,"BEMANI Sound Team ""U1 overground""",BEMANISOUNDTEAMU1OVERGROUND,GITADORA Matixx,0
 918,Sacrifice,SACRIFICE,龍,りゅう,GITADORA Matixx,0
 919,Victoria,VICTORIA,HIZAKI,HIZAKI,GITADORA Matixx,0
-920,Windy Fairy -GITADO ROCK ver.-,WINDYFAIRYGITADOROCKVER,"BEMANI Sound Team ""DJ TOTTO""",BEMANISOUNDTEAMDJTOTTO,GITADORA Matixx,0
+920,Windy Fairy -GITADOROCK ver.-,WINDYFAIRYGITADOROCKVER,"BEMANI Sound Team ""DJ TOTTO""",BEMANISOUNDTEAMDJTOTTO,GITADORA Matixx,0
 921,"busy come, busy go!!",BUSYCOMEBUSYGO,Masahiro“Godspeed”Aoki,MASAHIROGODSPEEDAOKI,"GITADORA Matixx,有名楽曲",0
 922,けもののおうじゃ★めうめう,けもののおうじゃめうめう,日向美ビタースイーツ♪,ひなたみびたーすいーつ,GITADORA Matixx,0
 923,とびきりシュガータイム,とびきりしゅがーたいむ,山本真央樹 feat.朔白,やまもとまおきFEATさくはく,GITADORA Matixx,0
@@ -875,7 +875,7 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 945,50th Memorial Songs -Beginning Story-,50THMEMORIALSONGSBEGINNINGSTORY,BEMANI Sound Team,BEMANISOUNDTEAM,GITADORA EXCHAIN,0
 946,50th Memorial Songs -Flagship medley-,50THMEMORIALSONGSFLAGSHIPMEDLEY,BEMANI Sound Team,BEMANISOUNDTEAM,GITADORA EXCHAIN,0
 947,50th Memorial Songs -The BEMANI History-,50THMEMORIALSONGSTHEBEMANIHISTORY,BEMANI Sound Team,BEMANISOUNDTEAM,GITADORA EXCHAIN,0
-948,50th Memorial Songs -二人の時 ~under the cherry blossoms~-,50THMEMORIALSONGSふたりのときUNDERTHECHERRYBLOSSOMS,BEMANI Sound Team,BEMANISOUNDTEAM,GITADORA EXCHAIN,0
+948,50th Memorial Songs -二人の時 ～under the cherry blossoms～-,50THMEMORIALSONGSふたりのときUNDERTHECHERRYBLOSSOMS,BEMANI Sound Team,BEMANISOUNDTEAM,GITADORA EXCHAIN,0
 949,Afterimage d'automne,AFTERIMAGEDAUTOMNE,"BEMANI Sound Team ""猫叉劇団""",BEMANISOUNDTEAMねこまたげきだん,GITADORA EXCHAIN,0
 950,BLACK JACKAL (GITADORA Style),BLACKJACKALGITADORASTYLE,Akira Complex with BENANI Sound Team,AKIRACOMPLEXWITHBENANISOUNDTEAM,GITADORA EXCHAIN,0
 951,Catch Our Fire!,CATCHOURFIRE,中島由貴,なかじまゆき,GITADORA EXCHAIN,0
@@ -903,16 +903,16 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 973,たたえよ！絶対覇権アリーシャ帝国,たたえよぜったいはけんありーしゃていこく,Blanc Bunny Bandit,BLANCBUNNYBANDIT,GITADORA EXCHAIN,0
 974,ひと夏の戯れYeah!!Samba,ひとなつのたわむれYEAHSAMBA,"BEMANI Sound Team ""哲学""",BEMANISOUNDTEAM哲学,GITADORA EXCHAIN,0
 975,シンクロフィッシュ,しんくろふぃっしゅ,Blanc Bunny Bandit,BLANCBUNNYBANDIT,GITADORA EXCHAIN,0
-976,ツミナガラ...と彼女は謂ふ -再-,つみながらとかのじょはいうさい,あさき,あさき,GITADORA EXCHAIN,0
+976,ツミナガラ... と彼女は謂ふ -再-,つみながらとかのじょはいうさい,あさき,あさき,GITADORA EXCHAIN,0
 977,ミッドナイト☆WAR,みっどないとWAR,いちか,いちか,GITADORA EXCHAIN,0
 978,万物快楽理論,ばんぶつかいらくりろん,あさき,あさき,GITADORA EXCHAIN,0
 979,千本桜,せんぼんざくら,黒うさP,くろうさP,"GITADORA EXCHAIN,有名楽曲",0
 980,堕羅朽,だらく,Des-ROW・組,DESROWぐみ,GITADORA EXCHAIN,0
 981,恋のメロディー,こいのめろでぃー,SARAH,SARAH,GITADORA EXCHAIN,0
 982,最小三倍完全数 (GITADORA Style),さいしょうさんばいかんぜんすうGITADORASTYLE,DJ TECHNORCH with BENANI Sound Team,DJTECHNORCHWITHBENANISOUNDTEAM,GITADORA EXCHAIN,0
-983,狂髪天を撫でて綴れ雲の綻び　五体北風に散りて痕も無し,きょうはつてんをなでてつずれぐものほころびごたいほくふうにちりてあともなし,"BEMANI Sound Team ""Akhuta Works""",BEMANISOUNDTEAMAKHUTAWORKS,GITADORA EXCHAIN,0
+983,狂髪天を撫でて綴れ雲の綻び 五体北風に散りて痕も無し,きょうはつてんをなでてつずれぐものほころびごたいほくふうにちりてあともなし,"BEMANI Sound Team ""Akhuta Works""",BEMANISOUNDTEAMAKHUTAWORKS,GITADORA EXCHAIN,0
 984,箱庭のエチュード,はこにわのえちゅーど,Blanc Bunny Bandit,BLANCBUNNYBANDIT,GITADORA EXCHAIN,0
-985,蛹　再,さなぎさい,あさき,あさき,GITADORA EXCHAIN,0
+985,蛹 再,さなぎさい,あさき,あさき,GITADORA EXCHAIN,0
 986,言って。,いって,ヨルシカ,よるしか,"GITADORA EXCHAIN,有名楽曲",0
 987,透明ジャスティス,とうめいじゃすてぃす,豚乙女,ぶたおとめ,GITADORA EXCHAIN,0
 988,霖が哭く,りんがなく,Power Of Nature,POWEROFNATURE,GITADORA EXCHAIN,0
@@ -937,7 +937,7 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 1008,至上のラトゥーリア,しじょうのらとぅーりあ,Vanitas Lacrimosa,VANITASLACRIMOSA,GITADORA NEX+AGE,0
 1009,超速戦士ギタドラス,ちょうそくせんしぎたどらす,Rookie.F feat.YOFFY(fromサイキックラバー),ROOKIEFFEATYOFFYFROMさいきっくらばー,GITADORA NEX+AGE,0
 1010,追憶のアリア,ついおくのありあ,Blanc Bunny Bandit,BLANCBUNNYBANDIT,GITADORA NEX+AGE,0
-1011,逆さま♥シンデレラパレード,さかさましんでれらぱれーど,メリー・バッド・メルヘン,めりーばっどめるへん,GITADORA NEX+AGE,0
+1011,逆さま シンデレラパレード,さかさましんでれらぱれーど,メリー・バッド・メルヘン,めりーばっどめるへん,GITADORA NEX+AGE,0
 1012,運命,さだめ,池田山葵,いけだわさび,GITADORA NEX+AGE,0
 1013,雷鳴,らいめい,SARAH(from Nine Universe) feat. 桿子 Drumstick,SARAHFROMNINEUNIVERSEFEAT桿子DRUMSTICK,GITADORA NEX+AGE,0
 1015,Accord,ACCORD,"BEMANI Sound Team ""HuΣeR"" feat.Fernweh",BEMANISOUNDTEAMHUΣERFEATFERNWEH,GITADORA HIGH-VOLTAGE,0
@@ -956,7 +956,7 @@ id,title,title_yomi,artist_name,artist_yomi,version,
 1028,WONDER TRIP,WONDERTRIP,駄々子,だだこ,GITADORA HIGH-VOLTAGE,0
 1029,うっせぇわ,うっせぇわ,Ado,ADO,"GITADORA HIGH-VOLTAGE,有名楽曲",0
 1030,ひまパンケーキメイキング,ひまぱんけーきめいきんぐ,ひまわり＊パンチ,ひまわりぱんち,GITADORA HIGH-VOLTAGE,0
-1031,ネクロファンタジア ～ Remix,ねくろふぁんたじあREMIX,Demetori,DEMETORI,"GITADORA HIGH-VOLTAGE,有名楽曲",0
+1031,ネクロファンタジア 〜 Remix,ねくろふぁんたじあREMIX,Demetori,DEMETORI,"GITADORA HIGH-VOLTAGE,有名楽曲",0
 1032,世界の果てに約束の凱歌を,せかいのはてにやくそくのがいせんを,Zutt feat.NU-KO,ZUTTFEATNUKO,GITADORA HIGH-VOLTAGE,0
 1033,僕らのシンフォニア,ぼくらのしんふぉにあ,山本真央樹 feat.藤野マナミ,やまもとまおきFEATふじのまなみ,GITADORA HIGH-VOLTAGE,0
 1034,夜に駆ける,よるにかける,,,"GITADORA HIGH-VOLTAGE,有名楽曲",0
