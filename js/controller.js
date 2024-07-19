@@ -16,6 +16,7 @@ let timeoutIDs = [];
 let correctTitle = "";
 let phaseStartTime = 0;
 let isLoading = true;
+let targetMusics = [];
 
 function start() {
   document.getElementById('how-to-play').style.display = 'none';
@@ -218,13 +219,13 @@ function setMusics(title = "", artist = "", version = "") {
   let artists = artist.split(",");
   let versions = version.split(",");
 
-  musics.sort((a, b) => a[2].localeCompare(b[2]));
+  targetMusics.sort((a, b) => a[2].localeCompare(b[2]));
   if (artist != "") {
-    musics.sort((a, b) => a[4].localeCompare(b[4]));
+    targetMusics.sort((a, b) => a[4].localeCompare(b[4]));
   }
 
-  for (var i = 0; i < musics.length; i++) {
-    let music = musics[i];
+  for (var i = 0; i < targetMusics.length; i++) {
+    let music = targetMusics[i];
     if (title != "" && !titles.some(title => music[2].startsWith(title))) continue;
     if (artist != "" && !artists.some(artist => music[4].startsWith(artist))) continue;
     if (version != "" && !versions.some(version => music[5].includes(version))) continue;
@@ -238,7 +239,7 @@ function setRandomMusic() {
   let selectedMusic = "";
   let retryCount = 0;
   do {
-    selectedMusic = musics[Math.floor(Math.random() * musics.length)];
+    selectedMusic = targetMusics[Math.floor(Math.random() * targetMusics.length)];
     correctTitle = toViewTitle(selectedMusic);
     retryCount++;
   } while (titles.includes(correctTitle) && retryCount < 100);
@@ -305,6 +306,7 @@ window.onload = function () {
   bgImg.onload = function () {
     drawImage(4);
   };
+  targetMusics = musics.filter(music => music[6] == "0");
 
   setMusics();
   hookFilter();
