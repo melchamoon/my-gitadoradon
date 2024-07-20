@@ -8,7 +8,7 @@ const firebaseConfig = {
   appId: "1:1054794233764:web:1056a77a661119aa08b331",
   measurementId: "G-3EE806DGKJ",
 };
-const databaseName = "rankings_20240707";
+const databaseName = "rankings_20240720";
 // Firebaseを初期化
 firebase.initializeApp(firebaseConfig);
 
