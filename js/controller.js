@@ -114,12 +114,16 @@ function answer(retire = false) {
   }
 }
 
+function calcTotalPoint() {
+  return points.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+}
+
 function finish() {
   document.getElementById('notice').textContent = '';
-  let totalPoint = points.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+  let totalPoint = calcTotalPoint();
   document.getElementById('final-result').style.display = 'block';
   document.getElementById('final-result-point').textContent = totalPoint;
-  addPoint(totalPoint);
+  addPoint(totalPoint, "");
   if (totalPoint == 0) {
     document.getElementById('register-name-form').style.display = 'none';
     document.getElementById('retry-form').style.display = 'block';
@@ -280,12 +284,16 @@ function hookFilter() {
 
 function submitName() {
   let name = document.getElementById('input-name').value;
+  if (name.length == 0) {
+    alert("名前を入力してくれなのだ！");
+    return false;
+  }
   if (name.length >= 20) {
     alert("名前は20文字以内にしてくれなのだ！");
     return false;
   }
   document.getElementById('submit-name-button').disabled = true;
-  changeName(name);
+  addPoint(calcTotalPoint(), name);
 
   // すぐランキングを表示すると名前の更新が反映前にデータを取得してしまうことがあるので
   // 少し待ってからランキングに遷移するのだ！
