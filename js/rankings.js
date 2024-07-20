@@ -3,8 +3,15 @@ window.onload = async function () {
   const table = document.getElementById('ranking-table');
   let rank = 0;
   let previousPoint = null;
+  const displayedNames = new Set();
+
   docs.forEach((doc) => {
     const data = doc.data();
+    if (displayedNames.has(data.name)) {
+      return;
+    }
+    displayedNames.add(data.name);
+
     if (previousPoint !== data.point) {
       rank++;
     }

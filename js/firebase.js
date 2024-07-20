@@ -8,7 +8,10 @@ const firebaseConfig = {
   appId: "1:1054794233764:web:1056a77a661119aa08b331",
   measurementId: "G-3EE806DGKJ",
 };
-const databaseName = "rankings_20240720";
+const databaseNameBase = "rankings_20240720";
+const databaseNameAnonymous = `${databaseNameBase}_anonymous`;
+const databaseNameNamed = `${databaseNameBase}_named`;
+
 // Firebaseを初期化
 firebase.initializeApp(firebaseConfig);
 
@@ -17,10 +20,12 @@ let db = firebase.firestore();
 
 let docRefID = "";
 // データを追加
-async function addPoint(point) {
+async function addPoint(point, name) {
+  const databaseName = name !== "" ? databaseNameNamed : databaseNameAnonymous;
+
   await db.collection(databaseName).add({
     point: point,
-    name: "",
+    name: name,
     created_at: firebase.firestore.FieldValue.serverTimestamp(),
   })
     .then(function (docRef) {
@@ -31,16 +36,8 @@ async function addPoint(point) {
     });
 }
 
-async function changeName(name) {
-  if (docRefID != "") {
-    await db.collection(databaseName).doc(docRefID).update({
-      name: name,
-    });
-  }
-};
-
 async function fetchRankings() {
-  return await db.collection(databaseName)
+  return await db.collection(databaseNameNamed)
     .where('point', '>=', 1)
     .orderBy('point', 'desc')
     .limit(300)
